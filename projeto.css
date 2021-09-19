@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Permanent+Marker&display=swap');
+
+* { /* o tamanho fica com o que setamos */
+    box-sizing: border-box;
+}
+
+.tachado {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 1px;
+}
+body{
+    height: 663px;  
+    margin: 0;
+    padding: 0;
+    background-image: url('https://image.freepik.com/free-vector/empty-vintage-notebook-paper_53876-93950.jpg'), url('https://static.scientificamerican.com/sciam/cache/file/B138306C-B6BE-40DB-925471A06A9DEE3A_source.jpg?w=590&h=800&57086BDA-4B79-4176-BFF86024FCB0CA97');
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: 600px 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+header{ 
+    /* font-size:; */
+    height: 180px;
+    padding-top: 85px;
+    font-size: 24px;;
+    font-family: 'Permanent Marker', serif;
+}
+
+.form {
+    height: 60px;
+    align-content: center;
+    width: 350px;
+}
+
+.form input {
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.form button {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+.form input {
+    width: 100%;
+    text-align: center;
+}
+.listaDeItens{
+    height: auto;
+    padding-top: 0px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Carattere', sans-serif;
+    font-size: 22px;
+}
+.itens{
+    height: 30px;
+    align-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    border-bottom: 1px solid green;
+    border-right: 1px solid green;
+
+}
+.itens2{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.itens2 div {
+    height: 15px;
+    width: auto;
+    margin-right: 10px;
+    
+}
+.itens3 button {
+    border-radius: 10px;
+    border:2px solid green;
+    text-align: center;
+}
