@@ -8,7 +8,7 @@ let itensArr =
 
 //Declaração de funções
 
-//Teste para salvar div
+//Salvar as divs criadas no localstorage
 const mandarDivParaLocalStorage = (listaDeItens) => {
   localStorage.setItem("div", JSON.stringify(listaDeItens.innerHTML));
 };
@@ -45,6 +45,7 @@ const tacharTexto = () => {
   mandarDivParaLocalStorage(listaDeItens);
 };
 
+// Adiciona item confirmado ao div no DOM
 const adionarItemAoDiv = (x) => {
   console.log("Mostrei a lista");
   listaDeItens.innerHTML = 
@@ -68,7 +69,7 @@ const mandarParaLocalStorage = (itensArr) => {
   console.log("Mandei para storage");
 };
 
-//Removendo itens da lista e localstorage
+//Removendo itens da lista, localstorage e dom
 const removerItem = () => {
   const idForTheDiv = this.document.activeElement.getAttribute("id");
   const idDiv = document.getElementById("d" + idForTheDiv);
